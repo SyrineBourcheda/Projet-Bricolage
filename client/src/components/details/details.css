@@ -1,0 +1,358 @@
+.detailsBodyAnounce {
+  height: auto;
+  background: linear-gradient(white, #f3f5f8, #f3f5f7);
+  position: relative;
+  bottom: 60PX;
+  padding-bottom: 40PX;
+}
+
+.Informations {
+  padding: 2%;
+}
+
+.containerImage {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.containerImage > img {
+  height: 104%;
+  width: 100%;
+}
+
+.MainInformations {
+  height: 104%;
+  padding: 1%;
+  box-shadow: rgba(224, 219, 219, 0.1) 0px 1px 1px 0px inset, rgba(123, 123, 149, 0.25) 0px 50px 100px -20px, rgba(148, 144, 144, 0.3) 0px 30px 60px -30px;
+}
+
+.welcomeWord {
+  color: #173f5a;
+  padding: 2%;
+}
+
+.profileLink {
+  text-decoration: none;
+  color: #5da5d5;
+  cursor: pointer;
+  padding: 1%;
+  margin-left: 30%;
+}
+
+.profileLink:hover {
+  background: linear-gradient(135deg, #71b7e6, #1F618D);
+  color: #e3dfdf;
+}
+
+.FirstTitle {
+  text-decoration: underline;
+  color: #1F618D;
+  font-size: 1.4vw;
+}
+
+.CONTACT {
+  background-color: #e6ebef;
+  position: relative;
+  box-shadow: rgba(224, 219, 219, 0.1) 0px 1px 1px 0px inset, rgba(123, 123, 149, 0.25) 0px 50px 100px -20px, rgba(148, 144, 144, 0.3) 0px 30px 60px -30px;
+}
+
+.contactForm {
+  height: 100%;
+  padding: 2%;
+  text-align: center;
+}
+
+.ContactMe {
+  color: #1F618D;
+  padding: 1%;
+  font-size: 1.2REM;
+}
+
+.sellerName {
+  color: #1F618D;
+  padding: 1%;
+}
+
+.findContact {
+  color: #091e2c;
+  padding: 1%;
+  font-size: 1REM;
+  margin-bottom: 5%;
+}
+
+.CommentWritter {
+  font-size: 1.2REM;
+  color: #7c7575;
+  padding-top: 3%;
+  padding-left: 2%;
+}
+
+.Border {
+  border-bottom: 1PX solid black;
+}
+
+.comments {
+  margin-top: 40PX;
+  position: relative;
+}
+
+.imageComment {
+  width: 40%;
+  padding-bottom: 2%;
+}
+
+.commentImageProfil {
+  display: flex;
+  padding: 2%;
+}
+
+.comment-header {
+  padding-left: 1%;
+}
+
+.SearchImageComment {
+  width: 5%;
+  height: 2.3VW;
+}
+
+@media (min-width: 1000px) {
+  .containerDetails {
+    margin-top: 10%;
+    height: 80%;
+  }
+  .Informations {
+    display: flex;
+    height: 46VW;
+  }
+  .MainDetails {
+    font-size: 1.2VW;
+  }
+  .Note {
+    font-size: .8VW;
+  }
+  .sellerName {
+    font-size: 1.3REM;
+    margin-left: 30%;
+  }
+  .containerImage {
+    width: 70%;
+    height: 42VW;
+    margin-right: 2%;
+    margin-left: 0;
+  }
+  .welcomeWord {
+    font-size: 1REM;
+    font-weight: 600;
+  }
+  .profileLink {
+    font-size: 1.5REM;
+  }
+  .CONTACT {
+    width: 50%;
+    height: 26VW;
+    left: 25%;
+  }
+  .comments {
+    left: 25%;
+  }
+  .imgProfile {
+    left: 35%;
+  }
+}
+
+@media (max-width: 999px) {
+  .containerImage {
+    width: 90%;
+    height: 50VW;
+    margin-top: 100PX;
+    margin-left: 9%;
+  }
+  .MainInformations {
+    margin-left: 9%;
+    margin-top: 50PX;
+    width: 90%;
+    height: 75VW;
+  }
+  .MainDetails {
+    font-size: 1.8VW;
+  }
+  .Note {
+    font-size: 1.4VW;
+  }
+  .sellerName {
+    font-size: 1REM;
+    margin-left: 20%;
+  }
+  .profileLink {
+    font-size: 3VW;
+  }
+  .CONTACT {
+    width: 80%;
+    left: 13%;
+  }
+  .welcomeWord {
+    font-size: 2VW;
+    padding: 2%;
+    font-weight: 600;
+  }
+  .MESSAGE {
+    height: 70PX;
+  }
+  .comments {
+    left: 13%;
+  }
+  .imgProfile {
+    left: 27%;
+  }
+}
+
+/*scrolled list*/
+.list-item {
+  background: rgba(32, 16, 16, 0.1);
+  margin-left: 10px;
+  display: inline-block;
+  width: 20VW;
+  height: 20VW;
+}
+
+.scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: auto;
+}
+
+.previous {
+  margin-left: 5%;
+  padding: 2%;
+}
+
+.previousImage {
+  height: 100%;
+  width: 100%;
+  vertical-align: 0%;
+}
+
+.imgProfile {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-image: url(https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png);
+  background-size: cover;
+}
+
+.imgProfile .Profile {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  bottom: 20%;
+}
+
+.imgProfile p {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size: 1.5em;
+  color: #fff !important;
+  text-align: center;
+  line-height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imgProfile:hover p {
+  cursor: pointer;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.imgProfile:hover .click-me {
+  display: none;
+}
+
+.imgProfile:not(:hover) p {
+  animation-name: hide;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}
+
+.click-me {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrap {
+  font-size: 1.5em;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.wrap .click {
+  background-color: #ddd;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation-name: click;
+  animation-duration: 1.5s;
+  animation-delay: 0.75s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.wrap .fa {
+  color: #fff;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  animation-name: click-cursor;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes click {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes click-cursor {
+  0% {
+    opacity: 1;
+    transform: translate(0, 100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
