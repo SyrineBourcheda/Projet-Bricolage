@@ -191,7 +191,7 @@ class Form extends PureComponent {
            />
           </div>
           
-          <p className="link1"><span>You can use this site to create links for your images: </span> <a href="https://postimages.org/?fbclid=IwAR2xg2P85kmJEBvtGBUpgvuOQVG0MlVlyTcyThbbUHb3XC00F4vRPswDt9c">Link</a></p>
+          <p className="link1"><span>You can use this site to create links for your images: </span> <a href="https://postimages.org/?fbclid=IwAR2xg2P85kmJEBvtGBUpgvuOQVG0MlVlyTcyThbbUHb3XC00F4vRPswDt9c" target="_blank">Link</a></p>
           
           <div className='txt-field Photo'>
             <input type="url" required  value={this.state.photo} onChange={this.handleInputPhoto} />
@@ -256,7 +256,7 @@ Choose one category:
     
   </select>
 </div>
-       <div className="button">
+       <div className="button Publish" >
           <input type="submit" value="Publish" />
        </div>
       </form>

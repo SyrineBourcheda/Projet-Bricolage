@@ -26,6 +26,11 @@ export default function(state={},action){
         case 'UPDATE_USER':
                 return { ...state,updateUser:action.payload.success,
                                        userr:action.payload.doc}
+        case 'GET_USERS':
+                 return {...state,users:action.payload}
+
+        case 'GET_USERBYEMAIL':
+             return {...state,userinfo:action.payload}
                                    
         default:
             return state;

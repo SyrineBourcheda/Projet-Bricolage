@@ -109,7 +109,7 @@ class CommentBox extends React.Component {
           <div className="commentImageProfil">
           <img className='SearchImage SearchImageComment' src={this.props.image} ></img>
           <p className="comment-header">{this.props.name} {this.props.lastname}</p>
-          </div>
+          </div>  
           <p className="comment-body">- {this.props.body}</p>
           
         </div>

@@ -268,6 +268,16 @@ export function updateUser(data){
     }
 
 }
+//get user by email
+export function getUserByEmail(mail){
+    const request = axios.get(`/api/User-Email?email=mail`)
+                    .then(response => response.data);
+
+    return {
+        type:'GET_USERBYEMAIL',
+        payload:request
+    }
+}
 
 ////comment
 export function addComment(comment){
@@ -296,4 +306,39 @@ export function clearComments(){
             adComment:{}
         }
     }
+}
+// message
+//post message
+export function addMsg(message){
+    const request = axios.post('/api/AddMsg',message)
+        .then(response => response.data);
+    
+    return {
+        type:'ADD_MESSAGE',
+        payload:request
+    }
+}
+//get message
+export function getReviews(
+    limit = 3,
+    start = 0,
+    order = 'asc',
+    list = ''
+){
+    
+    const request = axios.get(`/api/message?limit=${limit}&skip=${start}&order=${order}`)
+                    .then(response => {
+                            if(list){
+                                return [...list,...response.data]
+                            } else {
+                                return response.data
+                            }
+                        }
+                    )
+
+    return {
+        type:'GET_REVIEWS',
+        payload:request
+    }
+
 }

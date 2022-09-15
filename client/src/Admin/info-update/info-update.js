@@ -158,7 +158,8 @@ componentWillReceiveProps(nextProps){
           />
             
           </div>
-          
+          <p className="link1"><span>You can use this site to create links for your image: </span> <a href="https://postimages.org/?fbclid=IwAR2xg2P85kmJEBvtGBUpgvuOQVG0MlVlyTcyThbbUHb3XC00F4vRPswDt9c" target="_blank">Link</a></p>
+
               
         </div>
         <div className="error">
@@ -189,7 +190,7 @@ componentWillReceiveProps(nextProps){
             </label>
           </div>
         </div>
-        <p className="link1"><span>You can use this site to create links for your image: </span> <a href="https://postimages.org/?fbclid=IwAR2xg2P85kmJEBvtGBUpgvuOQVG0MlVlyTcyThbbUHb3XC00F4vRPswDt9c">Link</a></p>
+        <p className="link1"><span>You can use this site to create links for your image: </span> <a href="https://postimages.org/?fbclid=IwAR2xg2P85kmJEBvtGBUpgvuOQVG0MlVlyTcyThbbUHb3XC00F4vRPswDt9c" target="_blank">Link</a></p>
         <div className='txt-field Photo'>
                     <input type="url" required  value={this.state.formdata.image}
                        onChange={(event)=>this.handleInput(event,'image')}/>

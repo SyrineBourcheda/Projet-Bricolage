@@ -127,10 +127,10 @@ const Home = () => {
       </div>
 
    <div className="col-md-6 VideoContainer" >
-   <video controls    className='video'>
+   <video controls  className='video'>
 
       <source src={video} type="video/mp4" />
-      <source src="video.ogg" type="video/ogg"></source>
+      <source src="video.ogg" type="video/ogg"/>
 </video>
    </div>
   </div>
@@ -268,7 +268,7 @@ const Home = () => {
 
 
  
-<Footer/>
+ <Footer/>
 
 
 </div>

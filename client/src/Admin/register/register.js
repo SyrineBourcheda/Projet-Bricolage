@@ -80,7 +80,13 @@ componentWillReceiveProps(nextProps){
         })
 
 
-    } else {
+    } 
+    else if (password.length < 6){
+      this.setState({
+        error:"Minimum password length must be 6 !"
+      })
+    }
+    else {
       this.setState({
         error:""
       })
@@ -221,7 +227,7 @@ componentWillReceiveProps(nextProps){
             </label>
           </div>
         </div>
-        <p className="link1"><span>You can use this site to create links for your image: </span> <a href="https://postimages.org/?fbclid=IwAR2xg2P85kmJEBvtGBUpgvuOQVG0MlVlyTcyThbbUHb3XC00F4vRPswDt9c">Link</a></p>
+        <p className="link1"><span>You can use this site to create links for your image: </span> <a href="https://postimages.org/?fbclid=IwAR2xg2P85kmJEBvtGBUpgvuOQVG0MlVlyTcyThbbUHb3XC00F4vRPswDt9c" target="_blank">Link</a></p>
         <div className='txt-field Photo'>
                     <input type="url" required value={this.state.image} onChange={this.handleInputImage} />
                     <span className='bar'></span>
