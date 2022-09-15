@@ -14,10 +14,10 @@ const sendEmail =(e)=> {
           console.log(error.text);
       });
       setTimeout(function () { window.location.reload(); }, 10)
-    
+
   };
  
-  
+
   
     return (
         <div>

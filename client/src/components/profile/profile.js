@@ -38,11 +38,11 @@ class userProfile extends React.Component{
                     </li>
                     <li className="AboutListItems"><i class="fa fa-venus-mars" aria-hidden="true"></i> Gender:{user.userProfile.gender}
                     </li>
-                    <li className="AboutListItems"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:syrine.dkhil@ensi-uma.tn">email:{user.userProfile.email}</a>
+                    <li className="AboutListItems"><i class="fa fa-envelope" aria-hidden="true"></i> <a href={`mailto:${user.userProfile.email}`} target="_blank">email:{user.userProfile.email}</a>
                     </li>
-                    <li className="AboutListItems"><i class="fa fa-facebook-official" aria-hidden="true"></i><a href={user.userProfile.facebook}>  facebook</a>
+                    <li className="AboutListItems"><i class="fa fa-facebook-official" aria-hidden="true"></i><a href={user.userProfile.facebook} target="_blank">  facebook</a>
                     </li>
-                    <li className="AboutListItems"><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href={user.userProfile.linkedin}>  linkedIn</a>
+                    <li className="AboutListItems"><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href={user.userProfile.linkedin} target="_blank">  linkedIn</a>
                     </li>
                   </ul>
                   <Link to="/userUpdate"> <button className=" UpdateBio" >Edit Information</button></Link>
