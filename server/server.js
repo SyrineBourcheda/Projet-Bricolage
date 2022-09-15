@@ -11,6 +11,7 @@ mongoose.connect(config.DATABASE)
 const { User } = require('./models/user'); 
 const { Ad } = require('./models/ad');
 const { COMMENT } = require('./models/comments');
+const {MESSAGE} = require('./models/message')
 const { auth} = require('./middleware/auth')
 app.use(bodyParser.json());
 app.use(cookieParser());
@@ -208,6 +209,32 @@ app.get('/api/AdComment',(req,res)=>{
     COMMENT.find({adId:adId}).exec((err,docs)=>{
         if(err) return res.status(400).send(err);
         res.send(docs)
+    })
+})
+//Messages
+//post message
+app.post('/api/AddMsg',(req,res)=>{
+    const message = new MESSAGE(req.body);
+
+    message.save((err,doc)=>{
+        if(err) return res.json(err);
+        res.status(200).json({
+            success:true,
+            message:doc
+        })
+    })
+})
+//get message
+app.get('/api/message',(req,res)=>{
+    // locahost:3001/api/books?skip=3&limit=2&order=asc
+    let skip = parseInt(req.query.skip);
+    let limit = parseInt(req.query.limit);
+    let order = req.query.order;
+
+    // ORDER = asc || desc
+    MESSAGE.find().skip(skip).sort({_id:order}).limit(limit).exec((err,doc)=>{
+        if(err) return res.status(400).send(err);
+        res.send(doc.sort(() => Math.random() - 0.5));
     })
 })
 
