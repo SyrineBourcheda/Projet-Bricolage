@@ -1,5 +1,3 @@
-# Projet-Bricolage
+# Application for home work and repairs
 
-
-
-![Uploading 355209109_632876458876616_6073487087059609966_n.png…]()
+This project consists in conceiving and developing a web application allowing the exchange of services between individuals, it gathers competent and qualified profiles which propose various types of work at home
